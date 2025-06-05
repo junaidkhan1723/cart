@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cart-container">
+    <h2>YAY! IT'S BOGO</h2>
+    
+    <div class="option" data-unit="1">
+      <label for="unit1">
+        <input type="radio" name="unit" id="unit1" value="27.00">
+        1 Unit <span class="discount">10% OFF</span>
+        <span class="original-price">$30.00 USD</span>
+        <span class="price">$27.00 USD</span>
+      </label>
+      <div class="details" id="details1">
+        <div class="SC"><span style="margin:0px 55px 0px 35px">Size</span> <span>Color</span></div>
+        <div class="select-row">
+          <label>#1</label>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Black</option>
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Orange</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="option" data-unit="2">
+      <label for="unit2">
+        <input type="radio" name="unit" id="unit2" value="48.00">
+        2 Unit <span class="discount">20% OFF</span>
+        <span class="original-price">$60.00 USD</span>
+        <span class="price">$48.00 USD</span>
+        <span class="popular">MOST POPULAR</span>
+      </label>
+      <div class="details" id="details2">
+                <div class="SC"><span style="margin:0px 55px 0px 35px">Size</span> <span>Color</span></div>
+
+        <div class="select-row">
+          <label>#1</label>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Black</option>
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Orange</option>
+          </select>
+        </div>
+        <div class="select-row">
+          <label>#2</label>
+          <select>
+            <option>M</option>
+            <option>S</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Red</option>
+            <option>Black</option>
+            <option>Blue</option>
+            <option>Orange</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="option" data-unit="3">
+      <label for="unit3">
+        <input type="radio" name="unit" id="unit3" value="63.00">
+        3 Unit <span class="discount">30% OFF</span>
+        <span class="original-price">$90.00 USD</span>
+        <span class="price">$63.00 USD</span>
+      </label>
+      <div class="details" id="details3">
+                <div class="SC"><span style="margin:0px 55px 0px 35px">Size</span> <span>Color</span></div>
+
+        <div class="select-row">
+          <label>#1</label>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Black</option>
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Orange</option>
+          </select>
+        </div>
+        <div class="select-row">
+          <label>#2</label>
+          <select>
+            <option>M</option>
+            <option>S</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Red</option>
+            <option>Black</option>
+            <option>Blue</option>
+            <option>Orange</option>
+          </select>
+        </div>
+        <div class="select-row">
+          <label>#3</label>
+          <select>
+            <option>L</option>
+            <option>S</option>
+            <option>M</option>
+          </select>
+          <select>
+            <option>Blue</option>
+            <option>Black</option>
+            <option>Red</option>
+            <option>Orange</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>Free Delivery</span>
+      <span id="total">TOTAL: $0.00 USD</span>
+    </div>
+
+    <button class="add-to-cart" onclick="addToCart()">+ Add to Cart</button>
+    <p class="powered-by">© Powered by Junaid</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
